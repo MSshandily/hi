@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<head>
+  <title>www.GoSHOPPING.co.in/test-mode/displayonly/html-version</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  
+ 
+
+  <style type="text/css">
+  	@media only screen and (max-width: 620px) {
+  /* For mobile phones: */
+  .menu, .main, .right {
+    width: 100%;
+  }
+
+
+  </style>
+</head>
+
+<body>
+	<body style="font-family:cursive;color:#aaaaaa;">
+
+<div class="top">
+
+  <div class="logo">
+    
+  </div>
+
+ <div style="background-color:darkblue;padding:10px;text-align:center;fo">
+  <img src="logo.jpg" width="90px" height="90px"> <h1 style="color: honeydew;">GoSHOPPING</h1>
+ 
+ </div>
+</div>
+
+<br>
+
+<div class="qrarea" style="background-color:darkred;padding:15px;text-align:center;font-family: sans-serif; ">
+  WELCOME TO WAL-MART, GROVE STREET, L.A County
+
+
+
+
+  
+</div>
+<br>
+<div class="video-wrap" style="float: left;">
+			<video id="video" playsinline autoplay></video>
+		</div>
+
+		<div class="controller">
+			<center><button id="snap" style="width:500px; height:auto;"><h2><a href="pen.html">SCAN</a></h2></button></center>
+		</div>
+
+		<canvas id="canvas" style="background-color:navy; width:4px; height:4px;"></canvas>
+
+<script type="text/javascript">
+	'use strict;'
+
+	const video = document.getElementById('video');
+	const canvas = document.getElementById('canvas');
+	const snap = document.getElementById('snap');
+	const errorMsgElement = document.getElementById('span#ErrorMsg');
+
+	const constraints = {
+		audio: true,
+		video:{
+			width: 640, height: 480
+		}
+	};
+
+	async function init(){
+		try{
+			const stream = await navigator.mediaDevices.getUserMedia(constraints);
+			handleSuccess(stream);
+		}
+		catch(e){
+			errorMsgElement.innerHTML = `navigator.getUserMedia.error:${e.toString()}`;
+		}
+	}
+
+function handleSuccess(stream){
+	window.stream = stream;
+	video.srcObject = stream
+}
+
+init();
+
+var context = canvas.gerContext('2d');
+snap.addEventListener("click",function(){
+	context.drawImage(video,0,0,640,480);
+})
+
+</script>
+
+<div class="magic" style="background-color:blueviolet; font-family: sans-serif; font-display: block;">
+	<center><b>SCAN A PRODUCT OR CHOOSE FROM THE AVAILABLE RACKS BELOW</b>
+
+
+
+		
+	
+
+
+
+	</center>
+	<br>
+	<br>
+	<br>
+	<br>
+<center>
+</div>
+<a href="random.html"><div style="width: 70px; float:left; height:50px; background:darkblue; margin:10px">
+RACK
+</div>
+</a>
+<a href=""><div style="width: 70px; float:left; height:50px; background:darkred; margin:10px">
+RACK
+</div></a><a href="random.html"><div style="width: 70px; float:left; height:50px; background:darkblue; margin:10px">
+RACK
+</div>
+</a>
+<a href=""><div style="width: 70px; float:left; height:50px; background:darkred; margin:10px">
+RACK
+</div></a><a href="random.html"><div style="width: 70px; float:left; height:50px; background:darkblue; margin:10px">
+RACK
+</div>
+</a>
+<a href=""><div style="width: 70px; float:left; height:50px; background:darkred; margin:10px">
+RACK
+</div></a><a href="random.html"><div style="width: 70px; float:left; height:50px; background:darkblue; margin:10px">
+RACK
+</div>
+</a>
+<a href=""><div style="width: 70px; float:left; height:50px; background:darkred; margin:10px">
+RACK
+</div></a><a href="random.html"><div style="width: 70px; float:left; height:50px; background:darkblue; margin:10px">
+RACK
+</div>
+</a>
+<a href=""><div style="width: 70px; float:left; height:50px; background:darkred; margin:10px">
+RACK
+</div></a><a href="random.html"><div style="width: 70px; float:left; height:50px; background:darkblue; margin:10px">
+RACK
+</div>
+</a>
+<a href=""><div style="width: 70px; float:left; height:50px; background:darkred; margin:10px">
+RACK
+</div></a><a href="random.html"><div style="width: 70px; float:left; height:50px; background:darkblue; margin:10px">
+RACK
+</div>
+</a>
+<a href=""><div style="width: 70px; float:left; height:50px; background:darkred; margin:10px">
+RACK
+</div></a><a href="random.html"><div style="width: 70px; float:left; height:50px; background:darkblue; margin:10px">
+RACK
+</div>
+</a>
+<a href=""><div style="width: 70px; float:left; height:50px; background:darkred; margin:10px">
+RACK
+</div></a><a href="random.html"><div style="width: 70px; float:left; height:50px; background:darkblue; margin:10px">
+RACK
+</div>
+</a>
+<a href=""><div style="width: 70px; float:left; height:50px; background:darkred; margin:10px">
+RACK
+</div></a><a href="random.html"><div style="width: 70px; float:left; height:50px; background:darkblue; margin:10px">
+RACK
+</div>
+</a>
+<a href=""><div style="width: 70px; float:left; height:50px; background:darkred; margin:10px">
+RACK
+</div></a><a href="random.html"><div style="width: 70px; float:left; height:50px; background:darkblue; margin:10px">
+RACK
+</div>
+</a>
+<a href=""><div style="width: 70px; float:left; height:50px; background:darkred; margin:10px">
+RACK
+</div></a><a href="random.html"><div style="width: 70px; float:left; height:50px; background:darkblue; margin:10px">
+RACK
+</div>
+</a>
+<a href=""><div style="width: 70px; float:left; height:50px; background:darkred; margin:10px">
+RACK
+</div></a><a href="random.html"><div style="width: 70px; float:left; height:50px; background:darkblue; margin:10px">
+RACK
+</div>
+</a>
+<a href=""><div style="width: 70px; float:left; height:50px; background:darkred; margin:10px">
+RACK
+</div></a><a href="random.html"><div style="width: 70px; float:left; height:50px; background:darkblue; margin:10px">
+RACK
+</div>
+</a>
+<a href=""><div style="width: 70px; float:left; height:50px; background:darkred; margin:10px">
+RACK
+</div></a><a href="random.html"><div style="width: 70px; float:left; height:50px; background:darkblue; margin:10px">
+RACK
+</div>
+</a>
+<a href=""><div style="width: 70px; float:left; height:50px; background:darkred; margin:10px">
+RACK
+</div></a><a href="random.html"><div style="width: 70px; float:left; height:50px; background:darkblue; margin:10px">
+RACK
+</div>
+</a>
+<a href=""><div style="width: 70px; float:left; height:50px; background:darkred; margin:10px">
+RACK
+</div></a><a href="random.html"><div style="width: 70px; float:left; height:50px; background:darkblue; margin:10px">
+RACK
+</div>
+</a>
+<a href=""><div style="width: 70px; float:left; height:50px; background:darkred; margin:10px">
+RACK
+</div></a><a href="random.html"><div style="width: 70px; float:left; height:50px; background:darkblue; margin:10px">
+RACK
+</div>
+</a>
+<a href=""><div style="width: 70px; float:left; height:50px; background:darkred; margin:10px">
+RACK
+</div></a><a href="random.html"><div style="width: 70px; float:left; height:50px; background:darkblue; margin:10px">
+RACK
+</div>
+</a>
+<a href=""><div style="width: 70px; float:left; height:50px; background:darkred; margin:10px">
+RACK
+</div></a><a href="random.html"><div style="width: 70px; float:left; height:50px; background:darkblue; margin:10px">
+RACK
+</div>
+</a>
+<a href=""><div style="width: 70px; float:left; height:50px; background:darkred; margin:10px">
+RACK
+</div></a><a href="random.html"><div style="width: 70px; float:left; height:50px; background:darkblue; margin:10px">
+RACK
+</div>
+</a>
+<a href=""><div style="width: 70px; float:left; height:50px; background:darkred; margin:10px">
+RACK
+</div></a><a href="random.html"><div style="width: 70px; float:left; height:50px; background:darkblue; margin:10px">
+RACK
+</div>
+</a>
+<a href=""><div style="width: 70px; float:left; height:50px; background:darkred; margin:10px">
+RACK
+</div></a><a href="random.html"><div style="width: 70px; float:left; height:50px; background:darkblue; margin:10px">
+RACK
+</div>
+</a>
+<a href=""><div style="width: 70px; float:left; height:50px; background:darkred; margin:10px">
+RACK
+</div></a><a href="random.html"><div style="width: 70px; float:left; height:50px; background:darkblue; margin:10px">
+RACK
+</div>
+</a>
+<a href=""><div style="width: 70px; float:left; height:50px; background:darkred; margin:10px">
+RACK
+</div></a><a href="random.html"><div style="width: 70px; float:left; height:50px; background:darkblue; margin:10px">
+RACK
+</div>
+</a>
+<a href=""><div style="width: 70px; float:left; height:50px; background:darkred; margin:10px">
+RACK
+</div></a><a href="random.html"><div style="width: 70px; float:left; height:50px; background:darkblue; margin:10px">
+RACK
+</div>
+</a>
+<a href=""><div style="width: 70px; float:left; height:50px; background:darkred; margin:10px">
+RACK
+</div></a><a href="random.html"><div style="width: 70px; float:left; height:50px; background:darkblue; margin:10px">
+RACK
+</div>
+</a>
+<a href=""><div style="width: 70px; float:left; height:50px; background:darkred; margin:10px">
+RACK
+</div></a><a href="random.html"><div style="width: 70px; float:left; height:50px; background:darkblue; margin:10px">
+RACK
+</div>
+</a>
+<a href=""><div style="width: 70px; float:left; height:50px; background:darkred; margin:10px">
+RACK
+</div></a><a href="random.html"><div style="width: 70px; float:left; height:50px; background:darkblue; margin:10px">
+RACK
+</div>
+</a>
+<a href=""><div style="width: 70px; float:left; height:50px; background:darkred; margin:10px">
+RACK
+</div></a><a href="random.html"><div style="width: 70px; float:left; height:50px; background:darkblue; margin:10px">
+RACK
+</div>
+</a>
+<a href=""><div style="width: 70px; float:left; height:50px; background:darkred; margin:10px">
+RACK
+</div></a><a href="random.html"><div style="width: 70px; float:left; height:50px; background:darkblue; margin:10px">
+RACK
+</div>
+</a>
+<a href=""><div style="width: 70px; float:left; height:50px; background:darkred; margin:10px">
+RACK
+</div></a><a href="random.html"><div style="width: 70px; float:left; height:50px; background:darkblue; margin:10px">
+RACK
+</div>
+</a>
+<a href=""><div style="width: 70px; float:left; height:50px; background:darkred; margin:10px">
+RACK
+</div></a><a href="random.html"><div style="width: 70px; float:left; height:50px; background:darkblue; margin:10px">
+RACK
+</div>
+</a>
+<a href=""><div style="width: 70px; float:left; height:50px; background:darkred; margin:10px">
+RACK
+</div></a><a href="random.html"><div style="width: 70px; float:left; height:50px; background:darkblue; margin:10px">
+RACK
+</div>
+</a>
+<a href=""><div style="width: 70px; float:left; height:50px; background:darkred; margin:10px">
+RACK
+</div></a><a href="random.html"><div style="width: 70px; float:left; height:50px; background:darkblue; margin:10px">
+RACK
+</div>
+</a>
+<a href=""><div style="width: 70px; float:left; height:50px; background:darkred; margin:10px">
+RACK
+</div></a><a href="random.html"><div style="width: 70px; float:left; height:50px; background:darkblue; margin:10px">
+RACK
+</div>
+</a>
+<a href=""><div style="width: 70px; float:left; height:50px; background:darkred; margin:10px">
+RACK
+</div></a><a href="random.html"><div style="width: 70px; float:left; height:50px; background:darkblue; margin:10px">
+RACK
+</div>
+</a>
+<a href=""><div style="width: 70px; float:left; height:50px; background:darkred; margin:10px">
+RACK
+</div></a><a href="random.html"><div style="width: 70px; float:left; height:50px; background:darkblue; margin:10px">
+RACK
+</div>
+</a>
+<a href=""><div style="width: 70px; float:left; height:50px; background:darkred; margin:10px">
+RACK
+</div></a><a href="random.html"><div style="width: 70px; float:left; height:50px; background:darkblue; margin:10px">
+RACK
+</div>
+</a>
+<a href=""><div style="width: 70px; float:left; height:50px; background:darkred; margin:10px">
+RACK
+</div></a><a href="random.html"><div style="width: 70px; float:left; height:50px; background:darkblue; margin:10px">
+RACK
+</div>
+</a>
+<a href=""><div style="width: 70px; float:left; height:50px; background:darkred; margin:10px">
+RACK
+</div></a><a href="random.html"><div style="width: 70px; float:left; height:50px; background:darkblue; margin:10px">
+RACK
+</div>
+</a>
+<a href=""><div style="width: 70px; float:left; height:50px; background:darkred; margin:10px">
+RACK
+</div></a><a href="random.html"><div style="width: 70px; float:left; height:50px; background:darkblue; margin:10px">
+RACK
+</div>
+</a>
+<a href=""><div style="width: 70px; float:left; height:50px; background:darkred; margin:10px">
+RACK
+</div></a><a href="random.html"><div style="width: 70px; float:left; height:50px; background:darkblue; margin:10px">
+RACK
+</div>
+</a>
+<a href=""><div style="width: 70px; float:left; height:50px; background:darkred; margin:10px">
+RACK
+</div></a><a href="random.html"><div style="width: 70px; float:left; height:50px; background:darkblue; margin:10px">
+RACK
+</div>
+</a>
+<a href=""><div style="width: 70px; float:left; height:50px; background:darkred; margin:10px">
+RACK
+</div></a><a href="random.html"><div style="width: 70px; float:left; height:50px; background:darkblue; margin:10px">
+RACK
+</div>
+</a>
+<a href=""><div style="width: 70px; float:left; height:50px; background:darkred; margin:10px">
+RACK
+</div></a><a href="random.html"><div style="width: 70px; float:left; height:50px; background:darkblue; margin:10px">
+RACK
+</div>
+</a>
+<a href=""><div style="width: 70px; float:left; height:50px; background:darkred; margin:10px">
+RACK
+</div></a><a href="random.html"><div style="width: 70px; float:left; height:50px; background:darkblue; margin:10px">
+RACK
+</div>
+</a>
+<a href=""><div style="width: 70px; float:left; height:50px; background:darkred; margin:10px">
+RACK
+</div></a><a href="random.html"><div style="width: 70px; float:left; height:50px; background:darkblue; margin:10px">
+RACK
+</div>
+</a>
+<a href=""><div style="width: 70px; float:left; height:50px; background:darkred; margin:10px">
+RACK
+</div></a><a href="random.html"><div style="width: 70px; float:left; height:50px; background:darkblue; margin:10px">
+RACK
+</div>
+</a>
+<a href=""><div style="width: 70px; float:left; height:50px; background:darkred; margin:10px">
+RACK
+</div></a><a href="random.html"><div style="width: 70px; float:left; height:50px; background:darkblue; margin:10px">
+RACK
+</div>
+</a>
+<a href=""><div style="width: 70px; float:left; height:50px; background:darkred; margin:10px">
+RACK
+</div></a><a href="random.html"><div style="width: 70px; float:left; height:50px; background:darkblue; margin:10px">
+RACK
+</div>
+</a>
+<a href=""><div style="width: 70px; float:left; height:50px; background:darkred; margin:10px">
+RACK
+</div></a><a href="random.html"><div style="width: 70px; float:left; height:50px; background:darkblue; margin:10px">
+RACK
+</div>
+</a>
+<a href=""><div style="width: 70px; float:left; height:50px; background:darkred; margin:10px">
+RACK
+</div></a><a href="random.html"><div style="width: 70px; float:left; height:50px; background:darkblue; margin:10px">
+RACK
+</div>
+</a>
+<a href=""><div style="width: 70px; float:left; height:50px; background:darkred; margin:10px">
+RACK
+</div></a><a href="random.html"><div style="width: 70px; float:left; height:50px; background:darkblue; margin:10px">
+RACK
+</div>
+</a>
+<a href=""><div style="width: 70px; float:left; height:50px; background:darkred; margin:10px">
+RACK
+</div></a><a href="random.html"><div style="width: 70px; float:left; height:50px; background:darkblue; margin:10px">
+RACK
+</div>
+</a>
+<a href=""><div style="width: 70px; float:left; height:50px; background:darkred; margin:10px">
+RACK
+</div></a><a href="random.html"><div style="width: 70px; float:left; height:50px; background:darkblue; margin:10px">
+RACK
+</div>
+</a>
+<a href=""><div style="width: 70px; float:left; height:50px; background:darkred; margin:10px">
+RACK
+</div></a><a href="random.html"><div style="width: 70px; float:left; height:50px; background:darkblue; margin:10px">
+RACK
+</div>
+</a>
+<a href=""><div style="width: 70px; float:left; height:50px; background:darkred; margin:10px">
+RACK
+</div></a><a href="random.html"><div style="width: 70px; float:left; height:50px; background:darkblue; margin:10px">
+RACK
+</div>
+</a>
+<a href=""><div style="width: 70px; float:left; height:50px; background:darkred; margin:10px">
+RACK
+</div></a><a href="random.html"><div style="width: 70px; float:left; height:50px; background:darkblue; margin:10px">
+RACK
+</div>
+</a>
+<a href=""><div style="width: 70px; float:left; height:50px; background:darkred; margin:10px">
+RACK
+</div></a><a href="random.html"><div style="width: 70px; float:left; height:50px; background:darkblue; margin:10px">
+RACK
+</div>
+</a>
+<a href=""><div style="width: 70px; float:left; height:50px; background:darkred; margin:10px">
+RACK
+</div></a><a href="random.html"><div style="width: 70px; float:left; height:50px; background:darkblue; margin:10px">
+RACK
+</div>
+</a>
+<a href=""><div style="width: 70px; float:left; height:50px; background:darkred; margin:10px">
+RACK
+</div></a><a href="random.html"><div style="width: 70px; float:left; height:50px; background:darkblue; margin:10px">
+RACK
+</div>
+</a>
+<a href=""><div style="width: 70px; float:left; height:50px; background:darkred; margin:10px">
+RACK
+</div></a><a href="random.html"><div style="width: 70px; float:left; height:50px; background:darkblue; margin:10px">
+RACK
+</div>
+</a>
+<a href=""><div style="width: 70px; float:left; height:50px; background:darkred; margin:10px">
+RACK
+</div></a><a href="random.html"><div style="width: 70px; float:left; height:50px; background:darkblue; margin:10px">
+RACK
+</div>
+</a>
+<a href=""><div style="width: 70px; float:left; height:50px; background:darkred; margin:10px">
+RACK
+</div></a><a href="random.html"><div style="width: 70px; float:left; height:50px; background:darkblue; margin:10px">
+RACK
+</div>
+</a>
+<a href=""><div style="width: 70px; float:left; height:50px; background:darkred; margin:10px">
+RACK
+</div></a><a href="random.html"><div style="width: 70px; float:left; height:50px; background:darkblue; margin:10px">
+RACK
+</div>
+</a>
+<a href=""><div style="width: 70px; float:left; height:50px; background:darkred; margin:10px">
+RACK
+</div></a><a href="random.html"><div style="width: 70px; float:left; height:50px; background:darkblue; margin:10px">
+RACK
+</div>
+</a>
+<a href=""><div style="width: 70px; float:left; height:50px; background:darkred; margin:10px">
+RACK
+</div></a><a href="random.html"><div style="width: 70px; float:left; height:50px; background:darkblue; margin:10px">
+RACK
+</div>
+</a>
+<a href=""><div style="width: 70px; float:left; height:50px; background:darkred; margin:10px">
+RACK
+</div></a><a href="random.html"><div style="width: 70px; float:left; height:50px; background:darkblue; margin:10px">
+RACK
+</div>
+</a>
+<a href=""><div style="width: 70px; float:left; height:50px; background:darkred; margin:10px">
+RACK
+</div></a><a href="random.html"><div style="width: 70px; float:left; height:50px; background:darkblue; margin:10px">
+RACK
+</div>
+</a>
+<a href=""><div style="width: 70px; float:left; height:50px; background:darkred; margin:10px">
+RACK
+</div></a><a href="random.html"><div style="width: 70px; float:left; height:50px; background:darkblue; margin:10px">
+RACK
+</div>
+</a>
+<a href=""><div style="width: 70px; float:left; height:50px; background:darkred; margin:10px">
+RACK
+</div></a><a href="random.html"><div style="width: 70px; float:left; height:50px; background:darkblue; margin:10px">
+RACK
+</div>
+</a>
+<a href=""><div style="width: 70px; float:left; height:50px; background:darkred; margin:10px">
+RACK
+</div></a>
+</center>
+
+
+	<div class=""></div>
+</body>
